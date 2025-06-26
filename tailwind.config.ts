@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				casino: {
+					gold: '#FFD700',
+					'gold-light': '#FFF700',
+					'gold-dark': '#B8860B',
+					red: '#DC143C',
+					'red-dark': '#8B0000',
+					green: '#228B22',
+					'green-dark': '#006400',
+					purple: '#9932CC',
+					'purple-dark': '#4B0082',
+					neon: '#00FFFF',
+					'neon-pink': '#FF1493'
 				}
 			},
 			borderRadius: {
@@ -84,11 +98,40 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'slot-spin': {
+					'0%': { transform: 'rotateX(0deg)' },
+					'100%': { transform: 'rotateX(360deg)' }
+				},
+				'neon-glow': {
+					'0%, 100%': { 
+						textShadow: '0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor',
+						transform: 'scale(1)'
+					},
+					'50%': { 
+						textShadow: '0 0 8px currentColor, 0 0 16px currentColor, 0 0 24px currentColor',
+						transform: 'scale(1.02)'
+					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'shimmer': {
+					'0%': { backgroundPosition: '-200% 0' },
+					'100%': { backgroundPosition: '200% 0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'slot-spin': 'slot-spin 1s ease-in-out infinite',
+				'neon-glow': 'neon-glow 2s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite',
+				'shimmer': 'shimmer 2s linear infinite'
+			},
+			backgroundImage: {
+				'gradient-shimmer': 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent)'
 			}
 		}
 	},
