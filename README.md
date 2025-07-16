@@ -368,5 +368,5 @@ VITE_ENVIRONMENT=production
 
 <div align="center">
   <p>🎰 Crafting Premium Casino Content Experiences</p>
-  <p>© 2024 Royal Casino Blog. All rights reserved.</p>
+  <p>© 2025 Royal Casino Blog. All rights reserved.</p>
 </div>
