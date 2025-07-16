@@ -1,10 +1,6 @@
-
-import React from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
-import BonusOffers from '@/components/BonusOffers';
-import PopularGames from '@/components/PopularGames';
-import SlotMachines from '@/components/SlotMachines';
+import FeaturedBlogs from '@/components/Blog/Featured/Blogs';
 import ResponsibleGambling from '@/components/ResponsibleGambling';
 import Footer from '@/components/Footer';
 
@@ -16,9 +12,7 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <BonusOffers />
-        <PopularGames />
-        <SlotMachines />
+        <FeaturedBlogs />
         <ResponsibleGambling />
       </main>
       <Footer />
